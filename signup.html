@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Create your Bloom &amp; Thorn account to enjoy faster checkout, order tracking, wishlist saving, and exclusive member discounts." />
+  <title>Sign Up | Bloom &amp; Thorn Florist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .signup-wrapper {
+      min-height: calc(100vh - var(--nav-h) - 200px);
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 0;
+    }
+    .signup-promo {
+      background: var(--deep-green);
+      padding: 4rem 3rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: var(--white);
+    }
+    .signup-promo h2 { color: var(--white); margin-bottom: 1rem; }
+    .signup-promo p { color: rgba(255,255,255,.8); margin-bottom: 2rem; }
+    .promo-perks { display: flex; flex-direction: column; gap: 1rem; }
+    .perk { display: flex; align-items: flex-start; gap: 0.75rem; }
+    .perk-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+    .perk-text strong { display: block; color: var(--blush-pink); margin-bottom: 2px; font-size: .95rem; }
+    .perk-text span { font-size: .85rem; color: rgba(255,255,255,.7); }
+    .signup-form-area { padding: 3rem 3rem; background: var(--cream); display: flex; flex-direction: column; justify-content: center; }
+    .social-signup { display: flex; gap: .75rem; margin-bottom: 1.5rem; }
+    .social-signup .btn { flex: 1; font-size: .85rem; }
+    .divider { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; color: var(--mid-grey); font-size: .85rem; }
+    .divider::before, .divider::after { content: ''; flex: 1; height: 1px; background: #ddd; }
+    .guest-link { text-align: center; margin-top: 1rem; font-size: .9rem; color: var(--mid-grey); }
+    .guest-link a { color: var(--light-green); font-weight: 600; }
+    .login-link { text-align: center; margin-top: .5rem; font-size: .9rem; color: var(--mid-grey); }
+    .login-link a { color: var(--light-green); font-weight: 600; }
+    @media (max-width: 900px) {
+      .signup-wrapper { grid-template-columns: 1fr; }
+      .signup-promo { padding: 2.5rem 1.5rem; }
+      .signup-form-area { padding: 2.5rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="index.html" aria-label="Bloom and Thorn Florist - Home">
+        <div class="nav-logo-icon" aria-hidden="true">🌸</div>
+        Bloom &amp; Thorn
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="signup.html" class="active">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="products.html" aria-label="Search products">🔍</a>
+        <a href="signup.html" aria-label="My account">👤</a>
+        <a href="#" aria-label="Shopping cart">🛒</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <div class="signup-wrapper">
+
+      <!-- Left: Promo Panel -->
+      <aside class="signup-promo" aria-label="Benefits of creating an account">
+        <div aria-hidden="true" style="font-size:3rem; margin-bottom:1rem;">🌸</div>
+        <h2>Join the Bloom &amp; Thorn Family</h2>
+        <p>Create your free account and enjoy exclusive member perks with every order.</p>
+        <div class="promo-perks" role="list">
+          <div class="perk" role="listitem">
+            <span class="perk-icon" aria-hidden="true">🎁</span>
+            <div class="perk-text">
+              <strong>10% Off Your First Order</strong>
+              <span>Instant discount applied at checkout upon registration.</span>
+            </div>
+          </div>
+          <div class="perk" role="listitem">
+            <span class="perk-icon" aria-hidden="true">🚚</span>
+            <div class="perk-text">
+              <strong>Order Tracking</strong>
+              <span>Real-time updates on your delivery status.</span>
+            </div>
+          </div>
+          <div class="perk" role="listitem">
+            <span class="perk-icon" aria-hidden="true">♥</span>
+            <div class="perk-text">
+              <strong>Wishlist Saving</strong>
+              <span>Save favourites and never lose track of a perfect arrangement.</span>
+            </div>
+          </div>
+          <div class="perk" role="listitem">
+            <span class="perk-icon" aria-hidden="true">🌺</span>
+            <div class="perk-text">
+              <strong>Exclusive Member Deals</strong>
+              <span>Early access to seasonal sales and limited collections.</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Right: Registration Form -->
+      <div class="signup-form-area">
+        <h1 style="font-size:1.75rem; margin-bottom:0.25rem;">Create Your Account</h1>
+        <p style="color:var(--mid-grey); margin-bottom:1.5rem; font-size:.9rem;">Fill in your details below to get started.</p>
+
+        <!-- Success Message -->
+        <div id="signupSuccess" class="form-success" role="alert" aria-live="polite">
+          🌸 Welcome to Bloom &amp; Thorn! Your account has been created. Check your email for your 10% discount code.
+        </div>
+
+        <!-- Social Sign-Up -->
+        <div class="social-signup" aria-label="Sign up with social media">
+          <button type="button" class="btn btn-secondary" aria-label="Sign up with Google" style="display:flex;align-items:center;gap:.4rem;justify-content:center;">
+            <span aria-hidden="true">G</span> Google
+          </button>
+          <button type="button" class="btn btn-secondary" aria-label="Sign up with Facebook" style="display:flex;align-items:center;gap:.4rem;justify-content:center;">
+            <span aria-hidden="true">f</span> Facebook
+          </button>
+        </div>
+
+        <div class="divider" aria-hidden="true">or sign up with email</div>
+
+        <!-- Registration Form -->
+        <form id="signupForm" novalidate aria-label="Account registration form">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
+              <input type="text" id="firstName" name="firstName" autocomplete="given-name" placeholder="Amara" aria-required="true" aria-describedby="firstNameErr" />
+              <span class="error-msg" id="firstNameErr" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
+              <input type="text" id="lastName" name="lastName" autocomplete="family-name" placeholder="Joseph" aria-required="true" aria-describedby="lastNameErr" />
+              <span class="error-msg" id="lastNameErr" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="signupEmail">Email Address <span class="required" aria-label="required">*</span></label>
+            <input type="email" id="signupEmail" name="email" autocomplete="email" placeholder="amara@example.com" aria-required="true" aria-describedby="signupEmailErr" />
+            <span class="error-msg" id="signupEmailErr" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span style="color:var(--mid-grey); font-weight:400; font-size:.82rem;">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="868-xxx-xxxx" aria-describedby="phoneErr" />
+            <span class="error-msg" id="phoneErr" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password <span class="required" aria-label="required">*</span></label>
+            <div class="password-wrap">
+              <input type="password" id="password" name="password" autocomplete="new-password" placeholder="Min. 8 characters" aria-required="true" aria-describedby="passwordErr passwordStrengthLabel" />
+              <button type="button" class="toggle-pw" data-target="password" aria-label="Show password">👁</button>
+            </div>
+            <div class="strength-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Password strength">
+              <div class="strength-fill" id="strengthFill"></div>
+            </div>
+            <span id="strengthLabel" style="font-size:.8rem; color:var(--mid-grey);" aria-live="polite"></span>
+            <span class="error-msg" id="passwordErr" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPw">Confirm Password <span class="required" aria-label="required">*</span></label>
+            <div class="password-wrap">
+              <input type="password" id="confirmPw" name="confirmPw" autocomplete="new-password" placeholder="Re-enter password" aria-required="true" aria-describedby="confirmPwErr" />
+              <button type="button" class="toggle-pw" data-target="confirmPw" aria-label="Show confirm password">👁</button>
+            </div>
+            <span class="error-msg" id="confirmPwErr" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <div class="checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter">Subscribe to our newsletter for deals and new arrivals</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required aria-required="true" />
+              <label for="terms">I agree to the <a href="#" style="color:var(--light-green);">Terms &amp; Conditions</a> and <a href="#" style="color:var(--light-green);">Privacy Policy</a> <span class="required">*</span></label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; margin-top:.5rem; font-size:1rem; padding:0.9rem;">
+            Create My Account 🌸
+          </button>
+
+        </form><!-- end form -->
+
+        <p class="guest-link">Prefer to shop without an account? <a href="products.html">Continue as Guest</a></p>
+        <p class="login-link">Already have an account? <a href="#">Log In</a></p>
+
+      </div><!-- end signup-form-area -->
+    </div><!-- end signup-wrapper -->
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html" aria-label="Bloom and Thorn Florist - Home">
+            <div class="nav-logo-icon" aria-hidden="true">🌸</div>Bloom &amp; Thorn
+          </a>
+          <p>Trinidad's premier florist — crafting fresh, hand-tied arrangements for every occasion since 2018.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+        <nav aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Customer service links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><span aria-hidden="true">📞</span> 868-222-1001</p>
+          <p><span aria-hidden="true">✉</span> hello@bloomandthorn.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Bloom &amp; Thorn Florist. All rights reserved.</span>
+        <div><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
