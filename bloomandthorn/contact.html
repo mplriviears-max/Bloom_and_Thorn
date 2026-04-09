@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Bloom &amp; Thorn Florist — reach us by phone, email, or visit one of our three Trinidad locations. Same-day delivery available." />
+  <title>Contact Us | Bloom &amp; Thorn Florist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="index.html" aria-label="Bloom and Thorn Florist - Home">
+        <div class="nav-logo-icon" aria-hidden="true">🌸</div>
+        Bloom &amp; Thorn
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Shop</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="products.html" aria-label="Search products">🔍</a>
+        <a href="signup.html" aria-label="My account">👤</a>
+        <a href="#" aria-label="Shopping cart">🛒</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Contact page header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &rsaquo; Contact Us
+        </nav>
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you — orders, questions, or custom requests welcome!</p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 class="sr-only" id="contact-heading">Contact Information and Form</h2>
+        <div class="contact-grid">
+
+          <!-- Contact Info -->
+          <aside aria-label="Contact information">
+            <h2 style="margin-bottom:1.5rem;">Contact Details</h2>
+
+            <div class="contact-info-block">
+              <div class="icon" aria-hidden="true">📞</div>
+              <h4>Phone</h4>
+              <p><a href="tel:+18682221001" style="color:var(--light-green);">868-222-1001</a> (POS Main)</p>
+              <p><a href="tel:+18682221002" style="color:var(--light-green);">868-222-1002</a> (San Fernando)</p>
+              <p><a href="tel:+18682221003" style="color:var(--light-green);">868-222-1003</a> (Chaguanas)</p>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="icon" aria-hidden="true">✉</div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@bloomandthorn.com" style="color:var(--light-green);">hello@bloomandthorn.com</a></p>
+              <p><a href="mailto:corporate@bloomandthorn.com" style="color:var(--light-green);">corporate@bloomandthorn.com</a> (B2B)</p>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="icon" aria-hidden="true">🕐</div>
+              <h4>Opening Hours</h4>
+              <p>Monday – Saturday: 7:30am – 6:00pm</p>
+              <p>Sunday: Closed (holiday exceptions apply)</p>
+              <p>Same-day delivery orders: before 12:00pm</p>
+            </div>
+
+            <div class="contact-info-block">
+              <div class="icon" aria-hidden="true">📍</div>
+              <h4>Our Locations</h4>
+              <p><strong>Port of Spain:</strong> 12 Frederick Street</p>
+              <p><strong>San Fernando:</strong> 45 Coffee Street</p>
+              <p><strong>Chaguanas:</strong> Unit 8, Mid Centre Mall</p>
+            </div>
+
+            <!-- Social Links -->
+            <div class="contact-info-block">
+              <div class="icon" aria-hidden="true">🌐</div>
+              <h4>Follow Us</h4>
+              <div class="social-links" style="margin-top:.5rem;">
+                <a href="#" aria-label="Visit Bloom and Thorn on Facebook" style="background:var(--light-green);">f</a>
+                <a href="#" aria-label="Visit Bloom and Thorn on Instagram" style="background:var(--light-green);">📷</a>
+                <a href="#" aria-label="Visit Bloom and Thorn on TikTok" style="background:var(--light-green);">♪</a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Contact Form -->
+          <div>
+            <div class="form-card">
+              <h2 style="margin-bottom:0.25rem;">Send Us a Message</h2>
+              <p style="color:var(--mid-grey); font-size:.9rem; margin-bottom:1.5rem;">We respond within 24 hours on business days.</p>
+
+              <!-- Success Message -->
+              <div id="contactSuccess" class="form-success" role="alert" aria-live="polite">
+                🌸 Thank you! Your message has been sent. We'll be in touch within 24 hours.
+              </div>
+
+              <form id="contactForm" novalidate aria-label="Contact form">
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contactName">Full Name <span class="required" aria-label="required">*</span></label>
+                    <input type="text" id="contactName" name="name" autocomplete="name" placeholder="Your full name" aria-required="true" aria-describedby="contactNameErr" />
+                    <span class="error-msg" id="contactNameErr" role="alert"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="contactEmail">Email Address <span class="required" aria-label="required">*</span></label>
+                    <input type="email" id="contactEmail" name="email" autocomplete="email" placeholder="your@email.com" aria-required="true" aria-describedby="contactEmailErr" />
+                    <span class="error-msg" id="contactEmailErr" role="alert"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactSubject">Subject <span class="required" aria-label="required">*</span></label>
+                  <select id="contactSubject" name="subject" aria-required="true" aria-describedby="contactSubjectErr">
+                    <option value="">— Select a subject —</option>
+                    <option value="order">Order Enquiry</option>
+                    <option value="custom">Custom Arrangement</option>
+                    <option value="corporate">Corporate / B2B</option>
+                    <option value="wedding">Wedding Consultation</option>
+                    <option value="delivery">Delivery Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="error-msg" id="contactSubjectErr" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contactMessage">Message <span class="required" aria-label="required">*</span></label>
+                  <textarea id="contactMessage" name="message" placeholder="How can we help you today?" aria-required="true" aria-describedby="contactMessageErr"></textarea>
+                  <span class="error-msg" id="contactMessageErr" role="alert"></span>
+                </div>
+
+                <div class="form-group">
+                  <div class="checkbox-group">
+                    <input type="checkbox" id="contactNewsletter" name="newsletter" />
+                    <label for="contactNewsletter">Subscribe me to the Bloom &amp; Thorn newsletter for offers and updates</label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%; font-size:1rem; padding:0.9rem;">
+                  Send Message ✉
+                </button>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MAP / LOCATIONS ===== -->
+    <section style="background:var(--cream); padding: 4rem 0;" aria-labelledby="locations-map-heading">
+      <div class="container">
+        <h2 class="section-title" id="locations-map-heading">Find Us</h2>
+        <p class="section-subtitle">Three convenient locations across Trinidad</p>
+
+        <!-- Map Placeholder -->
+        <div class="map-placeholder" role="img" aria-label="Map showing Bloom and Thorn store locations in Port of Spain, San Fernando, and Chaguanas, Trinidad">
+          <span aria-hidden="true">🗺</span>
+          <p>Interactive map — <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style="color:var(--light-green);">View on Google Maps</a></p>
+          <p style="font-size:.8rem;">Pin locations: Port of Spain · San Fernando · Chaguanas</p>
+        </div>
+
+        <!-- Branch Cards -->
+        <div class="store-cards">
+          <div class="store-card">
+            <div class="store-icon" aria-hidden="true">📍</div>
+            <h3>Port of Spain</h3>
+            <address style="font-style:normal; font-size:.88rem; color:var(--mid-grey);">
+              12 Frederick Street, POS<br>
+              Mon–Sat: 7:30am – 6:00pm<br>
+              <a href="tel:+18682221001" style="color:var(--light-green);">📞 868-222-1001</a>
+            </address>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top:1rem; font-size:.85rem;" aria-label="Get directions to Port of Spain store">Get Directions</a>
+          </div>
+          <div class="store-card">
+            <div class="store-icon" aria-hidden="true">📍</div>
+            <h3>San Fernando</h3>
+            <address style="font-style:normal; font-size:.88rem; color:var(--mid-grey);">
+              45 Coffee Street, San Fernando<br>
+              Mon–Sat: 8:00am – 5:30pm<br>
+              <a href="tel:+18682221002" style="color:var(--light-green);">📞 868-222-1002</a>
+            </address>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top:1rem; font-size:.85rem;" aria-label="Get directions to San Fernando store">Get Directions</a>
+          </div>
+          <div class="store-card">
+            <div class="store-icon" aria-hidden="true">📍</div>
+            <h3>Chaguanas</h3>
+            <address style="font-style:normal; font-size:.88rem; color:var(--mid-grey);">
+              Unit 8, Mid Centre Mall<br>
+              Mon–Sat: 9:00am – 6:00pm<br>
+              <a href="tel:+18682221003" style="color:var(--light-green);">📞 868-222-1003</a>
+            </address>
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="margin-top:1rem; font-size:.85rem;" aria-label="Get directions to Chaguanas store">Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Strip -->
+    <section style="background:var(--deep-green); padding:3.5rem 0;" aria-labelledby="faq-heading">
+      <div class="container">
+        <h2 class="section-title" id="faq-heading" style="color:var(--white);">Frequently Asked Questions</h2>
+        <div class="grid-3" style="margin-top:2rem;">
+          <div style="color:rgba(255,255,255,.85);">
+            <h4 style="color:var(--blush-pink); margin-bottom:.4rem;">Do you offer same-day delivery?</h4>
+            <p style="font-size:.88rem;">Yes! Orders placed before 12:00pm Monday–Saturday are eligible for same-day delivery across Trinidad.</p>
+          </div>
+          <div style="color:rgba(255,255,255,.85);">
+            <h4 style="color:var(--blush-pink); margin-bottom:.4rem;">Can I request a custom arrangement?</h4>
+            <p style="font-size:.88rem;">Absolutely. Use our contact form and select "Custom Arrangement" — our florists will reach out within 24 hours.</p>
+          </div>
+          <div style="color:rgba(255,255,255,.85);">
+            <h4 style="color:var(--blush-pink); margin-bottom:.4rem;">Do you cater for weddings and events?</h4>
+            <p style="font-size:.88rem;">Yes! We offer full wedding and event floristry packages. Contact our team for a free consultation and quote.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html" aria-label="Bloom and Thorn Florist - Home">
+            <div class="nav-logo-icon" aria-hidden="true">🌸</div>Bloom &amp; Thorn
+          </a>
+          <p>Trinidad's premier florist — crafting fresh, hand-tied arrangements for every occasion since 2018.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+        <nav aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Customer service links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Corporate Orders</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><span aria-hidden="true">📞</span> 868-222-1001</p>
+          <p><span aria-hidden="true">✉</span> hello@bloomandthorn.com</p>
+          <p><span aria-hidden="true">🕐</span> Mon–Sat: 7:30am – 6:00pm</p>
+          <p><span aria-hidden="true">🌐</span> www.bloomandthorn.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Bloom &amp; Thorn Florist. All rights reserved.</span>
+        <div><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="js/main.js"></script>
+</body>
+</html>

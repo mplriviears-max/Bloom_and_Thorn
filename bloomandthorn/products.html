@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse Bloom &amp; Thorn's full collection of fresh flower arrangements — bouquets, wreaths, tropical, corporate, and more. Order online for delivery across Trinidad." />
+  <title>Shop | Bloom &amp; Thorn Florist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a class="nav-logo" href="index.html" aria-label="Bloom and Thorn Florist - Home">
+        <div class="nav-logo-icon" aria-hidden="true">🌸</div>
+        Bloom &amp; Thorn
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html" class="active">Shop</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="products.html" aria-label="Search products">🔍</a>
+        <a href="signup.html" aria-label="My account">👤</a>
+        <a href="#" aria-label="Shopping cart">🛒</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-label="Shop page header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a> &rsaquo; Shop
+        </nav>
+        <h1>Our Collections</h1>
+        <p>Hand-crafted with love — fresh flowers for every occasion</p>
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS SECTION ===== -->
+    <section class="products-section" aria-labelledby="products-heading">
+      <div class="container">
+        <h2 class="sr-only" id="products-heading">Product Catalogue</h2>
+
+        <!-- Filter Bar -->
+        <div role="group" aria-label="Filter products by category">
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="birthdays" aria-pressed="false">🎂 Birthdays</button>
+            <button class="filter-btn" data-filter="weddings" aria-pressed="false">💍 Weddings</button>
+            <button class="filter-btn" data-filter="sympathy" aria-pressed="false">🕊 Sympathy</button>
+            <button class="filter-btn" data-filter="corporate" aria-pressed="false">🏢 Corporate</button>
+            <button class="filter-btn" data-filter="tropical" aria-pressed="false">🌺 Tropical</button>
+            <button class="filter-btn" data-filter="seasonal" aria-pressed="false">🍂 Seasonal</button>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="grid-3" id="productGrid" role="list" aria-label="Products">
+
+          <article class="product-card" data-category="birthdays" role="listitem">
+            <div class="product-img-wrap">
+              🌹
+              <span class="badge badge-new" style="position:absolute;top:.75rem;left:.75rem;">New</span>
+              <button class="wishlist-btn" aria-label="Add Crimson Romance Bouquet to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.9 stars">★★★★★</div>
+              <h3 class="product-name">Crimson Romance Bouquet</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">12 premium red roses, baby's breath, satin ribbon</p>
+              <p class="product-price">TTD $185.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="birthdays" role="listitem">
+            <div class="product-img-wrap">
+              🌸
+              <button class="wishlist-btn" aria-label="Add Pink Celebration Mix to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.7 stars">★★★★☆</div>
+              <h3 class="product-name">Pink Celebration Mix</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Roses, peonies &amp; lavender, elegant wrapping</p>
+              <p class="product-price">TTD $155.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="weddings" role="listitem">
+            <div class="product-img-wrap">
+              💐
+              <span class="badge badge-sale" style="position:absolute;top:.75rem;left:.75rem;">Sale</span>
+              <button class="wishlist-btn" aria-label="Add Bridal Garden Bundle to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <h3 class="product-name">Bridal Garden Bundle</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Bridal bouquet + 4 bridesmaids posies</p>
+              <p class="product-price">TTD $450.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="weddings" role="listitem">
+            <div class="product-img-wrap">
+              🌼
+              <button class="wishlist-btn" aria-label="Add White Elegance Centrepiece to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.8 stars">★★★★★</div>
+              <h3 class="product-name">White Elegance Centrepiece</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">White roses, orchids &amp; eucalyptus, vase included</p>
+              <p class="product-price">TTD $380.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="sympathy" role="listitem">
+            <div class="product-img-wrap">
+              🌷
+              <button class="wishlist-btn" aria-label="Add Serene White Lily Wreath to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.8 stars">★★★★☆</div>
+              <h3 class="product-name">Serene White Lily Wreath</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">White lilies, soft greenery, condolence card included</p>
+              <p class="product-price">TTD $310.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="sympathy" role="listitem">
+            <div class="product-img-wrap">
+              🤍
+              <button class="wishlist-btn" aria-label="Add Peaceful Garden Arrangement to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.6 stars">★★★★☆</div>
+              <h3 class="product-name">Peaceful Garden Arrangement</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Mixed whites &amp; creams in a basket</p>
+              <p class="product-price">TTD $265.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="corporate" role="listitem">
+            <div class="product-img-wrap">
+              🌿
+              <button class="wishlist-btn" aria-label="Add Executive Desk Greenery to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.6 stars">★★★★☆</div>
+              <h3 class="product-name">Executive Desk Greenery</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Weekly subscription — 3 or 5 arrangements</p>
+              <p class="product-price">TTD $140.00 / week</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Subscribe</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="corporate" role="listitem">
+            <div class="product-img-wrap">
+              🪴
+              <span class="badge badge-new" style="position:absolute;top:.75rem;left:.75rem;">New</span>
+              <button class="wishlist-btn" aria-label="Add Lobby Statement Piece to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <h3 class="product-name">Lobby Statement Piece</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Large floor arrangement for hotels &amp; offices</p>
+              <p class="product-price">TTD $750.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="tropical" role="listitem">
+            <div class="product-img-wrap">
+              🌺
+              <button class="wishlist-btn" aria-label="Add Island Blush Arrangement to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.7 stars">★★★★★</div>
+              <h3 class="product-name">Island Blush Arrangement</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Anthuriums, heliconias &amp; tropical foliage</p>
+              <p class="product-price">TTD $220.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="tropical" role="listitem">
+            <div class="product-img-wrap">
+              🦜
+              <button class="wishlist-btn" aria-label="Add Trini Carnival Burst to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="5 stars">★★★★★</div>
+              <h3 class="product-name">Trini Carnival Burst</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Vibrant multi-colour tropical arrangement</p>
+              <p class="product-price">TTD $195.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="seasonal" role="listitem">
+            <div class="product-img-wrap">
+              🌼
+              <span class="badge badge-new" style="position:absolute;top:.75rem;left:.75rem;">New</span>
+              <button class="wishlist-btn" aria-label="Add Sunshine Sunflower Mix to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.9 stars">★★★★★</div>
+              <h3 class="product-name">Sunshine Sunflower Mix</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Sunflowers, daisies &amp; greenery — summer vibes</p>
+              <p class="product-price">TTD $165.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="seasonal" role="listitem">
+            <div class="product-img-wrap">
+              🎄
+              <button class="wishlist-btn" aria-label="Add Christmas Poinsettia Basket to wishlist">♡</button>
+            </div>
+            <div class="product-info">
+              <div class="stars" aria-label="4.8 stars">★★★★★</div>
+              <h3 class="product-name">Christmas Poinsettia Basket</h3>
+              <p style="font-size:.85rem; color:var(--mid-grey); margin-bottom:.25rem;">Red &amp; white poinsettias, seasonal greenery</p>
+              <p class="product-price">TTD $175.00</p>
+              <div class="product-actions">
+                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                <button class="btn btn-secondary">Details</button>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- end product grid -->
+
+        <!-- Corporate CTA Banner -->
+        <div style="background:var(--deep-green); border-radius:12px; padding:2.5rem; text-align:center; margin-top:4rem; color:var(--white);">
+          <h3 style="color:var(--white); font-size:1.5rem; margin-bottom:.5rem;">Corporate &amp; Bulk Orders</h3>
+          <p style="color:rgba(255,255,255,.8); margin-bottom:1.25rem;">Hotels, restaurants, event planners — contact us for dedicated pricing, weekly subscriptions, and priority delivery.</p>
+          <a href="contact.html" class="btn btn-accent">Request a Quote</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="nav-logo" href="index.html" aria-label="Bloom and Thorn Florist - Home">
+            <div class="nav-logo-icon" aria-hidden="true">🌸</div>Bloom &amp; Thorn
+          </a>
+          <p>Trinidad's premier florist — crafting fresh, hand-tied arrangements for every occasion since 2018.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+        <nav aria-label="Quick links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Customer service links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">Delivery Info</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Corporate Orders</a></li>
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p><span aria-hidden="true">📞</span> 868-222-1001</p>
+          <p><span aria-hidden="true">✉</span> hello@bloomandthorn.com</p>
+          <p><span aria-hidden="true">🕐</span> Mon–Sat: 7:30am – 6:00pm</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Bloom &amp; Thorn Florist. All rights reserved.</span>
+        <div><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8679;</button>
+  <script src="js/main.js"></script>
+  <script>
+    // Update filter button aria-pressed states
+    document.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".filter-btn").forEach(b => b.setAttribute("aria-pressed", "false"));
+        btn.setAttribute("aria-pressed", "true");
+      });
+    });
+  </script>
+</body>
+</html>
